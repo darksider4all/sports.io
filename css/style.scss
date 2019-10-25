@@ -1,11 +1,26 @@
+$sports-color1: #676767;
+$sports-color2: #696969;
+$sports-linea-gradient: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+.content-wrapper {
+  height: 50vh;
+}
+
 .no-border-radius {
   border-radius: 0;
 }
 .text-black {
   color: black !important;
 }
+.text-primary {
+  color: $sports-color1 !important;
+}
+p {
+  &.text-primary {
+    color: $sports-color1;
+  }
+}
 .content-wrapper {
-  background: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+  background: $sports-linea-gradient;
   display: flex;
   p {
     text-align: justify;
@@ -23,6 +38,17 @@
       }
     }
   }
+}
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  min-height: 50vh;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .header-swiper {
   height: 100vh !important;

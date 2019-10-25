@@ -1,9 +1,21 @@
+.content-wrapper {
+  height: 50vh;
+}
+
 .no-border-radius {
   border-radius: 0;
 }
 
 .text-black {
   color: black !important;
+}
+
+.text-primary {
+  color: #676767 !important;
+}
+
+p.text-primary {
+  color: #676767;
 }
 
 .content-wrapper {
@@ -28,6 +40,17 @@
 
 .nav-section .navbar .nav-item .nav-link {
   color: inherit;
+}
+
+.parallax {
+  /* The image used */
+  /* Set a specific height */
+  min-height: 50vh;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .header-swiper {
