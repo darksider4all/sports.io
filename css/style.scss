@@ -1,9 +1,13 @@
-$sports-color1: #676767;
-$sports-color2: #696969;
-$sports-linea-gradient: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
-.content-wrapper {
-  height: 50vh;
-}
+$sports-gray-color1: #676767;
+$sports-gray-color2: #4d4d4d;
+$sports-gray-color3: #202020;
+
+$sports-linear-gradient: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
+$sports-linear-gradient2: linear-gradient(70deg, #2b98ff 40%, #5ac8fa 40%);
+$sports-linear-gradient-germany: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%),
+  linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
+
+$sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
 
 .no-border-radius {
   border-radius: 0;
@@ -11,17 +15,46 @@ $sports-linea-gradient: linear-gradient(110deg, #fdcd3b 60%, #ffed4b 60%);
 .text-black {
   color: black !important;
 }
-.text-primary {
-  color: $sports-color1 !important;
-}
-p {
-  &.text-primary {
-    color: $sports-color1;
+.text-gray {
+  color: $sports-gray-color1;
+  &.darker {
+    color: $sports-gray-color2 !important;
+  }
+  &.darkest {
+    color: $sports-gray-color3 !important;
   }
 }
+.swiper-button-next,
+.swiper-button-prev {
+  margin-top: $sports-middle !important;
+}
+.swiper-pagination-bullet {
+  opacity: 0.8;
+  background: $sports-gray-color1;
+  &.swiper-pagination-bullet-active {
+    background: white;
+  }
+}
+
 .content-wrapper {
-  background: $sports-linea-gradient;
+  &.parallax {
+    /* The image used */
+    /* Set a specific height */
+    min-height: 50vh;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+  }
   display: flex;
+  &.yellow-gradient {
+    background: $sports-linear-gradient;
+  }
+  &.red-blue-gradient {
+    background: $sports-linear-gradient2;
+  }
   p {
     text-align: justify;
   }
@@ -39,17 +72,7 @@ p {
     }
   }
 }
-.parallax {
-  /* The image used */
-  /* Set a specific height */
-  min-height: 50vh;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
 .header-swiper {
   height: 100vh !important;
   .parallax-bg {
