@@ -75,8 +75,17 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
 
 .header-swiper {
   height: 100vh !important;
+
   .parallax-bg {
-    background-image: url("/img/slide-1.jpg");
+    &.soccer {
+      background-image: url("/img/slide-1.jpg");
+    }
+    &.rugby {
+      background-image: url("/img/slide-2.jpg");
+    }
+    &.tennis {
+      background-image: url("/img/slide-3.jpg");
+    }
     background-position-x: 100px;
     position: absolute;
     left: 0;

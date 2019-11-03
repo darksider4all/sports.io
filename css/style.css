@@ -79,7 +79,6 @@
 }
 
 .header-swiper .parallax-bg {
-  background-image: url("/img/slide-1.jpg");
   background-position-x: 100px;
   position: absolute;
   left: 0;
@@ -88,6 +87,18 @@
   height: 100%;
   background-size: cover;
   background-position: top;
+}
+
+.header-swiper .parallax-bg.soccer {
+  background-image: url("/img/slide-1.jpg");
+}
+
+.header-swiper .parallax-bg.rugby {
+  background-image: url("/img/slide-2.jpg");
+}
+
+.header-swiper .parallax-bg.tennis {
+  background-image: url("/img/slide-3.jpg");
 }
 
 .swiper-container {
