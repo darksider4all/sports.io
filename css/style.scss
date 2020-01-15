@@ -1,7 +1,8 @@
 $sports-gray-color1: #676767;
 $sports-gray-color2: #4d4d4d;
 $sports-gray-color3: #202020;
-
+$sports-yellow-color1: #ffed4b;
+$sports-yellow-color2: #fdcc3b;
 $sports-linear-gradient-transparent: linear-gradient(110deg, #41300075 60%, #6d6d6d95 60%);
 $sports-linear-gradient: linear-gradient(110deg, #fdcc3b 60%, #ffed4b 60%);
 $sports-linear-gradient2: linear-gradient(70deg, #2b98ff 40%, #5ac8fa 40%);
@@ -36,7 +37,21 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
     background: white;
   }
 }
+.image-container {
+  position: relative;
+  display: inline-block;
+}
 
+.image-container:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 55%;
+  bottom: 0;
+  background: -webkit-linear-gradient(transparent, $sports-yellow-color2) left repeat;
+  background: linear-gradient(transparent, $sports-yellow-color2) left repeat;
+}
 .content-wrapper {
   &.parallax {
     /* The image used */
