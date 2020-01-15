@@ -94,16 +94,16 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
 
   .parallax-bg {
     &.gim {
-      background-image: url("/img/slide-1.jpg");
+      background-image: url("../img/slide-1.jpg");
     }
     &.rugby {
-      background-image: url("/img/slide-2.jpg");
+      background-image: url("../img/slide-2.jpg");
     }
     &.tennis {
-      background-image: url("/img/slide-3.jpg");
+      background-image: url("..//img/slide-3.jpg");
     }
     &.home {
-      background-image: url("/img/Gimnastica-la-ANEFS.jpg");
+      background-image: url("../img/Gimnastica-la-ANEFS.jpg");
     }
     background-position-x: 100px;
     position: absolute;
