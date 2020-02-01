@@ -1,3 +1,7 @@
+.body-wrapper {
+  margin-top: 5rem;
+}
+
 .no-border-radius {
   border-radius: 0;
 }
@@ -57,12 +61,19 @@
 .content-wrapper.parallax {
   /* The image used */
   /* Set a specific height */
-  min-height: 50vh;
   /* Create the parallax scrolling effect */
   background-attachment: fixed !important;
   background-position: center !important;
   background-repeat: no-repeat !important;
   background-size: cover !important;
+}
+
+.content-wrapper.parallax__160 {
+  min-height: 160vh;
+}
+
+.content-wrapper.parallax__100 {
+  min-height: 100vh;
 }
 
 .content-wrapper.yellow-gradient {
@@ -75,6 +86,16 @@
 
 .content-wrapper p {
   text-align: justify;
+}
+
+.bg-fcsb {
+  background: linear-gradient(120deg, #e6002e 50%, #000080 50%);
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.nav-section .navbar-brand .logo {
+  max-width: 100px;
 }
 
 .nav-section .navbar {
@@ -90,8 +111,28 @@
   color: inherit;
 }
 
+.font-2x {
+  font-size: 2rem;
+}
+
+.font-2x.lh__1 {
+  line-height: 1;
+}
+
+.font-4x {
+  font-size: 4rem;
+}
+
+.font-6x {
+  font-size: 6rem;
+}
+
 .header-swiper {
-  height: 100vh !important;
+  height: 92vh !important;
+}
+
+.header-swiper .bg-transparent .text-white {
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .header-swiper .parallax-bg {
@@ -102,23 +143,12 @@
   width: 130%;
   height: 100%;
   background-size: cover;
-  background-position: top;
-}
-
-.header-swiper .parallax-bg.gim {
-  background-image: url("../img/slide-1.jpg");
-}
-
-.header-swiper .parallax-bg.rugby {
-  background-image: url("../img/slide-2.jpg");
-}
-
-.header-swiper .parallax-bg.tennis {
-  background-image: url("..//img/slide-3.jpg");
+  background-position: center;
 }
 
 .header-swiper .parallax-bg.home {
-  background-image: url("../img/Gimnastica-la-ANEFS.jpg");
+  background-image: url("../img/roster.jog.jpg");
+  background-size: cover;
 }
 
 .swiper-container {

@@ -8,9 +8,15 @@ $sports-linear-gradient: linear-gradient(110deg, #fdcc3b 60%, #ffed4b 60%);
 $sports-linear-gradient2: linear-gradient(70deg, #2b98ff 40%, #5ac8fa 40%);
 $sports-linear-gradient-germany: linear-gradient(110deg, #000 33%, rgba(0, 0, 0, 0) 33%),
   linear-gradient(110deg, #dd0000 66%, #ffc608 66%);
-
 $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
-
+$fcsb-yellow: #ffdd55;
+$fcsb-blue: #000080;
+$fcsb-red: #e6002e;
+$fcsb-color-gradient: linear-gradient(120deg, $fcsb-red 50%, $fcsb-blue 50%);
+$warning: $fcsb-yellow;
+.body-wrapper {
+  margin-top: 5rem;
+}
 .no-border-radius {
   border-radius: 0;
 }
@@ -56,8 +62,12 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
   &.parallax {
     /* The image used */
     /* Set a specific height */
-    min-height: 50vh;
-
+    &__160 {
+      min-height: 160vh;
+    }
+    &__100 {
+      min-height: 100vh;
+    }
     /* Create the parallax scrolling effect */
     background-attachment: fixed !important;
     background-position: center !important;
@@ -75,7 +85,16 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
     text-align: justify;
   }
 }
+.bg-fcsb {
+  background: $fcsb-color-gradient;
+  transition: all 0.4s ease-in-out;
+}
 .nav-section {
+  .navbar-brand {
+    .logo {
+      max-width: 100px;
+    }
+  }
   .navbar {
     transition: all 0.4s ease-in-out;
     .navbar-brand {
@@ -88,22 +107,29 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
     }
   }
 }
-
+.font-2x {
+  &.lh__1 {
+    line-height: 1;
+  }
+  font-size: 2rem;
+}
+.font-4x {
+  font-size: 4rem;
+}
+.font-6x {
+  font-size: 6rem;
+}
 .header-swiper {
-  height: 100vh !important;
-
+  height: 92vh !important;
+  .bg-transparent {
+    .text-white {
+      background-color: rgba(0, 0, 0, 0.3);
+    }
+  }
   .parallax-bg {
-    &.gim {
-      background-image: url("../img/slide-1.jpg");
-    }
-    &.rugby {
-      background-image: url("../img/slide-2.jpg");
-    }
-    &.tennis {
-      background-image: url("..//img/slide-3.jpg");
-    }
     &.home {
-      background-image: url("../img/Gimnastica-la-ANEFS.jpg");
+      background-image: url("../img/roster.jog.jpg");
+      background-size: cover;
     }
     background-position-x: 100px;
     position: absolute;
@@ -113,7 +139,7 @@ $sports-middle: calc(-1 * var(--swiper-navigation-size) + 15rem / 2);
     height: 100%;
     -webkit-background-size: cover;
     background-size: cover;
-    background-position: top;
+    background-position: center;
   }
 }
 .swiper-container {
