@@ -17,6 +17,9 @@ $warning: $fcsb-yellow;
 .body-wrapper {
   margin-top: 5rem;
 }
+html {
+  scroll-behavior: smooth;
+}
 .no-border-radius {
   border-radius: 0;
 }
